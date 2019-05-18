@@ -3,6 +3,8 @@ package marvel.android.game.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
+
+import marvel.android.game.Drop;
 import marvel.android.game.MyGame;
 
 public class HtmlLauncher extends GwtApplication {
@@ -46,6 +48,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-                return new MyGame();
+                return new Drop();
         }
 }
